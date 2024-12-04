@@ -1,0 +1,52 @@
+/* Contenedor principal */
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7e9ff;
+    color: #4a2c6d;
+  }
+  
+  /* Contenido principal */
+  .landing-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .landing-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Sección de categorías */
+  .category-section {
+    margin-bottom: 40px;
+  }
+  
+  .category-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #4a2c6d;
+  }
+  
+  /* Grid de imágenes */
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .category-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .category-grid img:hover {
+    transform: scale(1.05);
+  }
+  

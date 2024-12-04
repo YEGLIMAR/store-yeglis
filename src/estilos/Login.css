@@ -1,0 +1,111 @@
+/* Contenedor principal */
+.login-container {
+    display: flex;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    width: 100vw; /* Ocupa toda la anchura de la pantalla */
+    margin: 0; /* Elimina márgenes */
+    padding: 0; /* Elimina rellenos */
+  }
+  
+  /* Columna de la imagen */
+  .login-image {
+    flex: 1; /* Ocupa el 50% del ancho */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5e8ff; /* Color de respaldo */
+  }
+  
+  .login-image img {
+    width: 100%; /* La imagen ocupará todo el ancho */
+    height: 100%; /* La imagen ocupará todo el alto */
+    object-fit: cover; /* Se asegura de que la imagen no se deforme */
+  }
+  
+  /* Columna del formulario */
+  .login-form {
+    z-index: 2; /* Se asegura de que esté sobre la imagen */
+    flex: 1; /* Ocupa el otro 50% del ancho */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    padding: 20px;
+    background-color: #f9f5ff; /* Fondo del formulario */
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1); /* Sombra para separar */
+  }
+  /* Capa de transparencia */
+.login-image::before {
+    content: ''; /* Requerido para los pseudo-elementos */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Cubre todo el ancho */
+    height: 100%; /* Cubre toda la altura */
+    background-color: rgba(138, 92, 246, 0.3); /* Color con transparencia (ejemplo: púrpura claro) */
+    z-index: 1; /* Se asegura de que esté sobre la imagen */
+  }
+  
+  .login-form h2 {
+    font-size: 2rem;
+    color: #8a48d4;
+    margin-bottom: 20px;
+  }
+  
+  .login-form form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #8a48d4;
+  }
+  
+  .login-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #d3c7e9;
+    border-radius: 5px;
+  }
+  
+  .login-form input:focus {
+    border-color: #8a5cf6;
+    box-shadow: 0 0 5px rgba(138, 92, 246, 0.5);
+  }
+  
+  .login-form button {
+    background-color: #8a5cf6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-form button:hover {
+    background-color: #5a0ecc;
+  }
+  
+  .login-form p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #6b5e7e;
+  }
+  
+  .login-form p a {
+    color: #8a5cf6;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .login-form p a:hover {
+    text-decoration: underline;
+  }
+  
