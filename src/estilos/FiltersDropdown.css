@@ -1,0 +1,74 @@
+.filters-dropdown {
+  position: absolute;
+  top: 150px; /* Ajusta según la posición del título */
+  left: 20px; /* Ajusta según tu diseño */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.filters-dropdown h3 {
+  font-size: 1.2rem;
+  color: #7a3dc0;
+  margin-bottom: 10px;
+}
+
+.filters-dropdown .price-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.filters-dropdown .price-slider span {
+  font-size: 1rem;
+  color: #8a48d4;
+  margin-bottom: 5px;
+}
+
+.filters-dropdown input[type="range"] {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  background: #d1b9e2;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filters-dropdown input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #8a48d4;
+  cursor: pointer;
+}
+
+.filters-dropdown input[type="range"]::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #8a48d4;
+  cursor: pointer;
+}
+
+.filters-dropdown ul {
+  list-style: none;
+  padding: 0;
+}
+
+.filters-dropdown ul li {
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.filters-dropdown ul li:hover {
+  color: #8a48d4;
+  text-decoration: underline;
+}
