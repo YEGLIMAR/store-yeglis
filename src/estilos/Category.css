@@ -97,7 +97,7 @@
   /* Grid de Productos */
   .category-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
     padding: 20px;
     justify-items: center;

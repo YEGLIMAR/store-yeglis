@@ -15,7 +15,7 @@ const handleLogout = () => {
   signOut(auth)
     .then(() => {
       console.log("Sesión cerrada exitosamente.");
-      window.location.href = "/Login"; // Redirige a la página principal o login
+      window.location.href = "/Login";
     })
     .catch((error) => {
       console.error("Error al cerrar sesión:", error);
@@ -44,8 +44,8 @@ const Landing = () => {
 
   return (
     <div className="landing-container">
-      {/* Header */}
       <header className="landing-header">
+        <div className="logo"></div>
         <div className="logo">
           <img src="/logo.png" alt="Brillanté" />
         </div>

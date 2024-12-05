@@ -12,7 +12,7 @@ const handleLogout = () => {
   signOut(auth)
     .then(() => {
       console.log("Sesión cerrada exitosamente.");
-      window.location.href = "/Login"; // Redirige a l
+      window.location.href = "/Login";
     })
     .catch((error) => {
       console.error("Error al cerrar sesión:", error);

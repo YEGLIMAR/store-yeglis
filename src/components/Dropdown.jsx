@@ -8,7 +8,7 @@ const Dropdown = () => {
 
   const handleCategoryClick = (category) => {
     navigate(`/categorias/${category}`);
-    setIsOpen(false); // Cierra el dropdown después de seleccionar una opción
+    setIsOpen(false); 
   };
 
   return (

@@ -2,22 +2,22 @@ import "../estilos/FiltersDropdown.css";
 import { useState } from "react";
 
 const FiltersDropdown = () => {
-  const [price, setPrice] = useState(1); // Estado inicial para el slider
+  const [price, setPrice] = useState(1);
 
   const handlePriceChange = (event) => {
-    setPrice(event.target.value); // Actualiza el valor del slider
+    setPrice(event.target.value);
   };
 
   return (
     <div className="filters-dropdown">
       <h3>Precio</h3>
       <div className="price-slider">
-        <span>${price}</span> {/* Muestra el valor dinámico */}
+        <span>${price}</span>
         <input
           type="range"
           min="1"
           max="100"
-          step="1" // Incrementos de $1
+          step="1"
           value={price}
           onChange={handlePriceChange}
         />
