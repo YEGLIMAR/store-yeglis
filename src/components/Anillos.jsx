@@ -7,14 +7,10 @@
  */
 import Category from "../components/Category";
 import { anillos } from "../components/data";
-import FiltersDropdown from "../components/FiltersDropdown"; 
 
 const Anillos = () => {
   return (
-    <div>
-      <FiltersDropdown /> 
       <Category title="Anillos" products={anillos} />
-    </div>
   );
 };
 
